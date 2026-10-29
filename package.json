@@ -1,0 +1,17 @@
+{
+  "name": "agriconnect",
+  "version": "1.0.0",
+  "description": "AgriConnect - Smart Farming Platform for Indian Farmers",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm run dev",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install",
+    "seed": "cd server && npm run seed",
+    "build": "cd client && npm run build"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
+
